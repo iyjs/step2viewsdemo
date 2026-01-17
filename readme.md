@@ -1,34 +1,34 @@
-## Installation
+## 安装说明
 
-Create Conda virtual environment:
+### 1. 创建 Conda 虚拟环境
 
+```bash
+conda create --name 3dsteps python=3.8
+conda activate 3dsteps
 ```
-conda create --name 3D_STEP_Classification python=3.8
-conda activate 3D_STEP_Classification
+
+### 2. 安装依赖包
+
+```bash
+conda install -c conda-forge numpy pythonocc-core pyqt -y
 ```
-conda install -c conda-forge pythonocc-core
 
-$ python 0step2multiviewAddlog.py 
+### 3. 运行程序
 
+```bash
+python 0step2multiviewAddlog.py
+```
 
-碰到环境安装问题可以初始化重新安装
+### 环境重置（如遇到问题）
+
+```bash
 conda deactivate
-conda remove -n 3D_STEP_Classification --all  # 删除旧环境
-conda create -n 3D_STEP_Classification python=3.8  # 推荐Python 3.9/3.10[2,5](@ref)
-conda activate 3D_STEP_Classification
-conda install -c conda-forge pythonocc-core pyqt  # 同时安装PythonOCC和PyQt5
+conda remove -n 3dsteps --all  # 删除旧环境
+conda create -n 3dsteps python=3.8  # 重新创建环境
+conda activate 3dsteps
+conda install -c conda-forge numpy pythonocc-core pyqt -y
+```
 
-conda install -c conda-forge numpy pythonocc-core
+### 参考资源
 
-
-碰到环境安装问题可以初始化重新安装
-conda deactivate
-conda remove -n 3DSTEP --all  # 删除旧环境
-conda create -n 3DSTEP python=3.8  # 推荐Python 3.9/3.10[2,5](@ref)
-conda activate 3DSTEP
-conda install -c conda-forge pythonocc-core pyqt  # 同时安装PythonOCC和PyQt5
-
-conda install -c conda-forge numpy pythonocc-core
-
-
-https://github.com/kovacsv/Online3DViewer
+- [Online3DViewer](https://github.com/kovacsv/Online3DViewer)
